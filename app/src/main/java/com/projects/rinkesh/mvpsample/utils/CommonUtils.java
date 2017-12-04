@@ -1,4 +1,4 @@
-package com.projects.rinkesh.mvpsample.ui;
+package com.projects.rinkesh.mvpsample.utils;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -6,6 +6,8 @@ import java.util.regex.Pattern;
 /**
  * Created by Rinkesh on 04/12/17.
  */
+
+// In the login activity we will be needing to verify email provided by users, following the architecture we can create this method in CommonUtils too.
 
 public class CommonUtils {
 

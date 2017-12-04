@@ -12,10 +12,9 @@ import com.projects.rinkesh.mvpsample.Data.DataManager;
 import com.projects.rinkesh.mvpsample.MvpApp;
 import com.projects.rinkesh.mvpsample.R;
 
-import com.projects.rinkesh.mvpsample.ui.CommonUtils;
+import com.projects.rinkesh.mvpsample.utils.CommonUtils;
 import com.projects.rinkesh.mvpsample.ui.base.BaseActivity;
 import com.projects.rinkesh.mvpsample.ui.main.MainActivity;
-import com.projects.rinkesh.mvpsample.ui.splash.SplashActivity;
 
 /**
  * Created by Rinkesh on 04/12/17.

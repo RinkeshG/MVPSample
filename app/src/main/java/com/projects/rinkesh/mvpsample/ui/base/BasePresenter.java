@@ -12,7 +12,7 @@ public class BasePresenter<V extends MvpView> implements  MvpPresenter<V> {
 
     private V mMvpView;
 
-    DataManager mDataManger;
+    private DataManager mDataManger;
 
     public BasePresenter(DataManager dataManager) {
         mDataManger = dataManager;
