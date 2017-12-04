@@ -6,16 +6,16 @@ import com.projects.rinkesh.mvpsample.Data.DataManager;
  * Created by Rinkesh on 04/12/17.
  */
 
-// It is base class for all the presenter that implements MvpPresenter and it is extended by all other presenter in the application
+// It is base class for all presenter that implements MvpPresenter and it is extended by all other presenters there in application.
 
-public class BasePresenter<V extends MvpView> implements MvpPresenter<V> {
+public class BasePresenter<V extends MvpView> implements  MvpPresenter<V> {
 
     private V mMvpView;
 
-    DataManager mDataManager;
+    DataManager mDataManger;
 
     public BasePresenter(DataManager dataManager) {
-        mDataManager = dataManager;
+        mDataManger = dataManager;
     }
 
     @Override
@@ -27,7 +27,7 @@ public class BasePresenter<V extends MvpView> implements MvpPresenter<V> {
         return mMvpView;
     }
 
-    public DataManager getmDataManager() {
-        return mDataManager;
+    public DataManager getmDataManger() {
+        return mDataManger;
     }
- }
+}
