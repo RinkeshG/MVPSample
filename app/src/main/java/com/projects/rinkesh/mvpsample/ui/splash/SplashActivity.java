@@ -5,8 +5,8 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.projects.rinkesh.mvpsample.Data.DataManager;
+import com.projects.rinkesh.mvpsample.MvpApp;
 import com.projects.rinkesh.mvpsample.R;
-
 import com.projects.rinkesh.mvpsample.ui.base.BaseActivity;
 import com.projects.rinkesh.mvpsample.ui.login.LoginActivity;
 import com.projects.rinkesh.mvpsample.ui.main.MainActivity;
@@ -29,16 +29,17 @@ public class SplashActivity extends BaseActivity implements  SplashMvpView {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-    }
 
-    DataManager dataManager = ((MvpApp) getApplication()).getDataManger();
 
-    mSplashPresenter = new SplashPresenter(dataManager);
+        DataManager dataManager = ((MvpApp) getApplication()).getDataManager();
+
+        mSplashPresenter = new SplashPresenter(dataManager);
 
         mSplashPresenter.onAttach(this);
 
         mSplashPresenter.decideNextActivity();
 
+    }
 
     @Override
     public void openMainActivity() {
