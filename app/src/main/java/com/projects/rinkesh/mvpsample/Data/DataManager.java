@@ -1,10 +1,10 @@
-package com.projects.rinkesh.mvpsample;
-
-import android.content.SharedPreferences;
+package com.projects.rinkesh.mvpsample.Data;
 
 /**
  * Created by Rinkesh on 04/12/17.
  */
+
+// Model Part of the App
 
 public class DataManager {
 

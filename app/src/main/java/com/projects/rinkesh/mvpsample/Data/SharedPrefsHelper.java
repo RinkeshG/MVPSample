@@ -1,4 +1,4 @@
-package com.projects.rinkesh.mvpsample;
+package com.projects.rinkesh.mvpsample.Data;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -6,6 +6,8 @@ import android.content.SharedPreferences;
 /**
  * Created by Rinkesh on 04/12/17.
  */
+
+// Model Part of the App
 
 public class SharedPrefsHelper {
 
